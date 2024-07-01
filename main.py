@@ -40,6 +40,23 @@ import textstat
 
 warnings.simplefilter("ignore")
 
+def removeHTML(x):
+    html=re.compile(r'<.*?>')
+    
+    
+# def data_processing(x):
+#     x = x.lower()
+    
+#     x = removeHTML(x)
+    
+    
+#     #removing strings that start with @
+#     x = re.sub('@\w+', '', x)
+    
+    
+    
+    
+
 
 
 
@@ -101,7 +118,14 @@ df['sentiment_scores'] = df['full_text'].apply(lambda x : sid.polarity_scores(x)
 
 
 
-print(df.head(10))
+
+
+
+# print(df.head(10))
+
+
+
+
 
 
 
